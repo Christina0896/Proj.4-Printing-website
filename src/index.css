@@ -1,5 +1,22 @@
 @import 'tailwindcss';
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 :root {
-  font-family: 'Plus Jakarta Sans';
+  font-family: 'Plus Jakarta Sans', sans-serif;
+
+  --background1: #e2f6e4;
+  --background2: #ffffff;
+  --button-background1: #2ebb77;
+  --button-background2: #2ebb77;
+}
+.topbar {
+  background-color: var(--background1);
+  min-height: 50px;
+}
+.topbar button {
+  border-radius: 7px;
+  cursor: pointer;
+}
+.topbar button:hover {
+  background-color: var(--button-background1);
+  color: white;
 }
