@@ -6,7 +6,7 @@
   --background1: #e2f6e4;
   --background2: #ffffff;
   --button-background1: #2ebb77;
-  --button-background2: #2ebb77;
+  --button-background2: #29a76a;
 }
 .topbar {
   background-color: var(--background1);
@@ -19,4 +19,11 @@
 .topbar button:hover {
   background-color: var(--button-background1);
   color: white;
+}
+
+.navLinks {
+  margin: 0 auto;
+}
+.navLinks a:hover {
+  color: var(--button-background1);
 }
