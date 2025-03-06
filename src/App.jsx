@@ -1,6 +1,7 @@
 import Topbar from './components/topbar';
 import Navbar from './components/navbar';
 import HeroSection from './components/herosection';
+import Categories from './components/categories';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Topbar />
       <Navbar />
       <HeroSection />
+      <Categories />
     </div>
   );
 }

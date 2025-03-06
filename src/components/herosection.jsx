@@ -2,7 +2,7 @@ import Slider from './slide';
 function HeroSection() {
   return (
     <div className="heroSection container mx-auto flex items-center justify-center ">
-      {/**/}
+      {/*Typewrite slide*/}
       <div className="leftSlide p-4 ">
         <h3 className="flex font-bold items-center justify-center mt-15">Create your own</h3>
         <h2 className=" flex flex-col text-[68px] font-bold mt-5">
@@ -31,6 +31,7 @@ function HeroSection() {
             How We Work <img className="ms-3" src="/src/assets/play.svg" alt="" />
           </button>
         </div>
+        {/*Numbers*/}
         <div className="numbers flex">
           <h2 className="flex flex-col ">
             12k+ <span>Collections</span>
