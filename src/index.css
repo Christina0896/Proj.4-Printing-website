@@ -2,12 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 :root {
   font-family: 'Plus Jakarta Sans', sans-serif;
-
   --background1: #e2f6e4;
   --background2: #ffffff;
   --button-background1: #2ebb77;
   --button-background2: #29a76a;
+  --color-paragraph: #7e7e7e;
 }
+
+/*Topbar*/
 .topbar {
   background-color: var(--background1);
   min-height: 50px;
@@ -20,10 +22,81 @@
   background-color: var(--button-background1);
   color: white;
 }
-
+/*Navbar*/
 .navLinks {
   margin: 0 auto;
 }
 .navLinks a:hover {
   color: var(--button-background1);
+}
+
+/*Hero Section*/
+
+.leftSlide h3 {
+  color: #b479d9;
+  background-color: #f4ebf9;
+  max-width: 180px;
+  height: 40px;
+  border-radius: 40px;
+  font-size: 18px;
+}
+.leftSlide p {
+  line-height: 32.4px;
+  color: var(--color-paragraph);
+}
+.defaultbtn {
+  width: 164px;
+  height: 56px;
+  background-color: var(--button-background1);
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.smallBorder {
+  border: 1px solid var(--color-paragraph);
+}
+.numbers h2 {
+  font-weight: bold;
+  font-size: 48px;
+}
+.numbers h2 span {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-paragraph);
+}
+
+/*TextSlider*/
+.typewriter {
+  height: 95px;
+  line-height: 1.5em;
+  overflow: hidden;
+}
+.typewriter li {
+  position: relative;
+  top: 0;
+  animation: slide 19s steps(3) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -300px;
+  }
+}
+
+.typewriter li span::before {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 545px;
+  height: 80px;
+  background-color: var(--background2);
+  border-left: 2px solid black;
+  animation: typing 2s steps(16) infinite alternate;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 40px 0 40px;
+  }
 }
