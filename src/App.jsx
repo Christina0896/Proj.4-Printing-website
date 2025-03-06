@@ -1,12 +1,16 @@
-import { useState } from 'react';
+import Topbar from './components/topbar';
+import Navbar from './components/navbar';
+import HeroSection from './components/herosection';
+import Mainsection from './components/mainsection';
 
 function App() {
   return (
-    <>
-      <div>
-        
-      </div>
-    </>
+    <div>
+      <Topbar />
+      <Navbar />
+      <HeroSection />
+      <Mainsection />
+    </div>
   );
 }
 
