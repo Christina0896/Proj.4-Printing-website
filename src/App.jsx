@@ -1,7 +1,7 @@
 import Topbar from './components/topbar';
 import Navbar from './components/navbar';
 import HeroSection from './components/herosection';
-import Categories from './components/categories';
+import Mainsection from './components/mainsection';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <Topbar />
       <Navbar />
       <HeroSection />
-      <Categories />
+      <Mainsection />
     </div>
   );
 }

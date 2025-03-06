@@ -24,7 +24,7 @@ function HeroSection() {
           What’s more, we do it right! A full administration printing background. Print shirts for yourself or your
           online business
         </p>
-         {/*Button*/}
+        {/*Button*/}
         <div className="leftSlidebtn flex pb-15">
           <button className="defaultbtn  font-bold">Shop Now </button>
           <button className="flex ms-6  font-bold items-center">
@@ -32,17 +32,17 @@ function HeroSection() {
           </button>
         </div>
         {/*Numbers*/}
-        <div className="numbers flex">
-          <h2 className="flex flex-col ">
-            12k+ <span>Collections</span>
+        <div className=" flex">
+          <h2 className="flex flex-col font-bold text-[48px] ">
+            12k+ <span className="font-normal text-[18px]">Collections</span>
           </h2>
           <div className="smallBorder mx-10"></div>
-          <h2 className=" flex flex-col">
-            26k+ <span>Items trusted to deliver</span>
+          <h2 className=" flex flex-col font-bold text-[48px]">
+            26k+ <span className="font-normal text-[18px]">Items trusted to deliver</span>
           </h2>
         </div>
       </div>
-       {/*Image Carousel*/}
+      {/*Image Carousel*/}
       <div className="rightSlide">
         <Slider />
       </div>
