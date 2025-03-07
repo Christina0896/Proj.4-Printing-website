@@ -4,6 +4,7 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
   --background1: #e2f6e4;
   --background2: #ffffff;
+  --background3: #f5f5f5;
   --button-background1: #2ebb77;
   --button-background2: #29a76a;
   --color-paragraph: #7e7e7e;
@@ -53,6 +54,9 @@ p {
   color: white;
   border-radius: 12px;
   cursor: pointer;
+}
+.defaultbtn:hover {
+  background-color: var(--button-background2);
 }
 .smallBorder {
   border: 1px solid var(--color-paragraph);
@@ -117,4 +121,8 @@ p {
 
 ul li:last-child .step-number::before {
   display: none;
+}
+/*Main Section 2*/
+.mainsection2 {
+  background-color: var(--background3);
 }
