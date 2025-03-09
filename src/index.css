@@ -130,31 +130,41 @@ ul li:last-child .step-number::before {
   background-color: var(--background3);
   width: 1905px;
 }
-.list-container {
-}
+/*Clickable List*/
 .list-feature {
   font-size: 20px;
   font-weight: 700;
 }
-.list-feature .selected-item.active {
-}
+
 .selected-item {
   padding: 30px 30px 15px;
 }
+.list-feature.active {
+  background-color: white; /* White background */
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.277) 0px 7px 30px 0px;
+}
 
+.list-description-wrapper {
+  height: 0px;
+  overflow: hidden;
+  transition:
+    max-height 0.5s ease,
+    opacity 0.3s ease,
+    transform 0.4s ease;
+  transform: translateY(0);
+  opacity: 0;
+}
+
+.list-description-wrapper.open {
+  height: auto; /* Allows the height to grow dynamically */
+  opacity: 1;
+  transform: translateY(0);
+}
 .list-description {
   font-weight: normal;
   padding: 0px 30px 15px;
   width: 70%;
   font-weight: 500;
   font-size: 18px;
-}
-.selected-item.active,
-.list-description {
-  width: 494px;
-}
-.img-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
 }

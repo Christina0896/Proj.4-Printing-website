@@ -44,23 +44,23 @@ function ClickableList() {
       {/* Left Side: List with Dropdown */}
       <div className="list-container w-124 h-136">
         {list.map((list, index) => (
-          <div key={index} className="list-feature">
-            <div className={`selected-item ${openList === index ? 'active' : ''}`} onClick={() => toggleList(index)}>
+          <div key={index} className={`list-feature  ${openList === index ? 'active' : ''}`}>
+            <div className="selected-item" onClick={() => toggleList(index)}>
               {list.title}
             </div>
 
             {/* Collapsible Description */}
-            {openList === index && (
+            <div className={`list-description-wrapper ${openList === index ? 'open' : ''}`}>
               <div className="list-description">
                 <p>{list.description}</p>
               </div>
-            )}
+            </div>
           </div>
         ))}
       </div>
 
       {/* Right Side: Changing Image */}
-      <div className="img-container w-230 h-136">
+      <div className="img-container flex justify-end w-230 h-136">
         <img src={selectedList.imageUrl} alt={selectedList.title} className="list-image" />
       </div>
     </div>
