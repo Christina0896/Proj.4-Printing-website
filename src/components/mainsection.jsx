@@ -89,8 +89,6 @@ function Mainsection() {
             explicabo. "
           />
         </div>
-        {/* Dropdown list with img */}
-        <div></div>
       </section>
     </main>
   );

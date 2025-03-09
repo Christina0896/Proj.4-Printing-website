@@ -131,9 +131,14 @@ ul li:last-child .step-number::before {
   width: 1905px;
 }
 /*Clickable List*/
+
 .list-feature {
   font-size: 20px;
   font-weight: 700;
+  border-radius: 12px;
+  transition:
+    background-color 0.2s ease-in,
+    box-shadow 0.2s ease-in;
 }
 
 .selected-item {
@@ -146,25 +151,21 @@ ul li:last-child .step-number::before {
 }
 
 .list-description-wrapper {
-  height: 0px;
+  max-height: 0px;
   overflow: hidden;
+  opacity: 1;
   transition:
-    max-height 0.5s ease,
-    opacity 0.3s ease,
-    transform 0.4s ease;
-  transform: translateY(0);
-  opacity: 0;
+    max-height 0.3s ease-in,
+    opacity 0.3s ease-in;
 }
 
 .list-description-wrapper.open {
-  height: auto; /* Allows the height to grow dynamically */
+  max-height: 180px; /* Allows the height to grow dynamically */
   opacity: 1;
-  transform: translateY(0);
 }
 .list-description {
   font-weight: normal;
   padding: 0px 30px 15px;
-  width: 70%;
   font-weight: 500;
   font-size: 18px;
 }
