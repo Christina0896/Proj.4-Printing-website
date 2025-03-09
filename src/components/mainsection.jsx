@@ -1,7 +1,8 @@
 import TextSection from './textsection';
+
 function Mainsection() {
   return (
-    <main className="container flex flex-col justify-center m-auto items-center ">
+    <main className=" flex flex-col justify-center m-auto items-center ">
       {/*Shopping by categories*/}
       <section className="flex flex-col ">
         <h1 className="mt-8 mb-5.5 font-bold font text-[28px]">Shopping by Categories</h1>
@@ -68,10 +69,11 @@ function Mainsection() {
           </li>
         </ul>
       </section>
+
       {/* Main Section 2 */}
-      <section className="mainsection2 flex flex-col">
+      <section className="mainSection2 flex-col ">
         <div className="flex pb-18">
-          <img className="pe-20" src="src\assets\mainsection2-img1.png" alt="" />
+          <img className="pe-20 p-4" src="src\assets\mainsection2-img1.png" alt="" />
           <div className="flex flex-col  m-auto">
             <h1 className="font-bold text-[48px] w-150"> Free and easy way to bring your ideas to life</h1>
             <p className="w-150 text-[18px] mt-5 mb-2.5">
@@ -80,16 +82,15 @@ function Mainsection() {
             <button className="defaultbtn font-bold"> Get Started</button>
           </div>
         </div>
-        <div>
+        <div className="pb-10">
           <TextSection
             title="T-shirt printing made easy."
             subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, optio nostrum suscipit voluptas
             explicabo. "
           />
         </div>
-        <div>
-          
-        </div>
+        {/* Dropdown list with img */}
+        <div></div>
       </section>
     </main>
   );
