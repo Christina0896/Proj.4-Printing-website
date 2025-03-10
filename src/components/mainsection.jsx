@@ -1,4 +1,9 @@
 import TextSection from './textsection';
+import Category1 from '/src/assets/Category-1.png';
+import Category2 from '/src/assets/Category-2.png';
+import Category3 from '/src/assets/Category-3.png';
+import Category4 from '/src/assets/Category-4.png';
+import Category5 from '/src/assets/Category-5.png';
 
 function Mainsection() {
   return (
@@ -7,11 +12,11 @@ function Mainsection() {
       <section className="flex flex-col ">
         <h1 className="mt-8 mb-5.5 font-bold font text-[28px]">Shopping by Categories</h1>
         <div className="category flex gap-19 ">
-          <img src="src\assets\category-1.png" alt="Category 1" />
-          <img src="src\assets\category-2.png" alt="Category 2" />
-          <img src="src\assets\category-3.png" alt="Category 3" />
-          <img src="src\assets\category-4.png" alt="Category 4" />
-          <img src="src\assets\category-5.png" alt="Category 5" />
+          <img src={Category1} alt="Category 1" />
+          <img src={Category2} alt="Category 2" />
+          <img src={Category3} alt="Category 3" />
+          <img src={Category4} alt="Category 4" />
+          <img src={Category5} alt="Category 5" />
         </div>
       </section>
       {/*How to create custom shirts*/}
