@@ -1,4 +1,5 @@
 import Slider from './slide';
+import Play from '/src/assets/play.svg';
 function HeroSection() {
   return (
     <div className="heroSection container mx-auto flex items-center justify-center ">
@@ -28,7 +29,7 @@ function HeroSection() {
         <div className="leftSlidebtn flex pb-15">
           <button className="defaultbtn  font-bold">Shop Now </button>
           <button className="flex ms-6  font-bold items-center">
-            How We Work <img className="ms-3" src="/src/assets/play.svg" alt="" />
+            How We Work <img className="ms-3" src={Play} alt="" />
           </button>
         </div>
         {/*Numbers*/}
