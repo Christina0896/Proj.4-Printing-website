@@ -1,6 +1,6 @@
 {
   "name": "proj4-printing-website",
-  "homepage": " https://christina0896.github.io/Proj.4-Printing-website/",
+  "homepage": "https://christina0896.github.io/Proj.4-Printing-website/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy":"gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@glidejs/glide": "^3.7.1",
