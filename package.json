@@ -1,5 +1,6 @@
 {
   "name": "proj4-printing-website",
+  "homepage": " https://christina0896.github.io/Proj.4-Printing-website/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,16 +8,21 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.7.1",
     "@tailwindcss/vite": "^4.0.9",
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwindcss": "^4.0.9"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
+    "@types/node": "^22.13.10",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
