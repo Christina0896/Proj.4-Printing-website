@@ -7,11 +7,11 @@ function Mainsection() {
       <section className="flex flex-col ">
         <h1 className="mt-8 mb-5.5 font-bold font text-[28px]">Shopping by Categories</h1>
         <div className="category flex gap-19 ">
-          <img src="src\assets\category-1.png" alt="" />
-          <img src="src\assets\category-2.png" alt="" />
-          <img src="src\assets\category-3.png" alt="" />
-          <img src="src\assets\category-4.png" alt="" />
-          <img src="src\assets\category-5.png" alt="" />
+          <img src="src\assets\category-1.png" alt="Category 1" />
+          <img src="src\assets\category-2.png" alt="Category 2" />
+          <img src="src\assets\category-3.png" alt="Category 3" />
+          <img src="src\assets\category-4.png" alt="Category 4" />
+          <img src="src\assets\category-5.png" alt="Category 5" />
         </div>
       </section>
       {/*How to create custom shirts*/}
