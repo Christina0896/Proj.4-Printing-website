@@ -3,6 +3,7 @@ import Navbar from './components/navbar';
 import HeroSection from './components/herosection';
 import Mainsection from './components/mainsection';
 import ClickableList from './components/ClickableList';
+import CardSlide from './components/cardSlide';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <HeroSection />
       <Mainsection />
       <ClickableList />
+      <CardSlide />
     </div>
   );
 }

@@ -147,7 +147,7 @@ ul li:last-child .step-number::before {
 .list-feature.active {
   background-color: white; /* White background */
   border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.277) 0px 7px 30px 0px;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 7px 30px 0px;
 }
 
 .list-description-wrapper {

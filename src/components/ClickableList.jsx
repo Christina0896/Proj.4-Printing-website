@@ -40,9 +40,9 @@ function ClickableList() {
     }
   };
   return (
-    <div className="mainSection2 flex ">
+    <div className="mainSection2 flex p-5">
       {/* Left Side: List with Dropdown */}
-      <div className="list-container w-124 h-136">
+      <div className="list-container w-124 h-136  ">
         {list.map((list, index) => (
           <div key={index} className={`list-feature  ${openList === index ? 'active' : ''}`}>
             <div className="selected-item" onClick={() => toggleList(index)}>
@@ -60,8 +60,8 @@ function ClickableList() {
       </div>
 
       {/* Right Side: Changing Image */}
-      <div className="img-container flex justify-end w-230 h-136">
-        <img src={selectedList.imageUrl} alt={selectedList.title} className="list-image" />
+      <div className="img-container flex justify-end w-228 h-150 ">
+        <img src={selectedList.imageUrl} alt={selectedList.title} className="list-image object-contain " />
       </div>
     </div>
   );
