@@ -2,6 +2,7 @@ import Topbar from './components/topbar';
 import Navbar from './components/navbar';
 import HeroSection from './components/herosection';
 import Mainsection from './components/mainsection';
+import ClickableList from './components/ClickableList';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <Mainsection />
+      <ClickableList />
     </div>
   );
 }

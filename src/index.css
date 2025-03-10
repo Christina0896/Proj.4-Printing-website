@@ -4,6 +4,7 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
   --background1: #e2f6e4;
   --background2: #ffffff;
+  --background3: #f5f5f5;
   --button-background1: #2ebb77;
   --button-background2: #29a76a;
   --color-paragraph: #7e7e7e;
@@ -54,6 +55,9 @@ p {
   border-radius: 12px;
   cursor: pointer;
 }
+.defaultbtn:hover {
+  background-color: var(--button-background2);
+}
 .smallBorder {
   border: 1px solid var(--color-paragraph);
 }
@@ -93,7 +97,7 @@ p {
     margin: 0 40px 0 40px;
   }
 }
-
+/*Main Sections*/
 .step-number {
   position: relative;
   width: 56px;
@@ -117,4 +121,51 @@ p {
 
 ul li:last-child .step-number::before {
   display: none;
+}
+/*Main Section 2*/
+.mainSection2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background3);
+  width: 1905px;
+}
+/*Clickable List*/
+
+.list-feature {
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 12px;
+  transition:
+    background-color 0.2s ease-in,
+    box-shadow 0.2s ease-in;
+}
+
+.selected-item {
+  padding: 30px 30px 15px;
+}
+.list-feature.active {
+  background-color: white; /* White background */
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.277) 0px 7px 30px 0px;
+}
+
+.list-description-wrapper {
+  max-height: 0px;
+  overflow: hidden;
+  opacity: 1;
+  transition:
+    max-height 0.3s ease-in,
+    opacity 0.3s ease-in;
+}
+
+.list-description-wrapper.open {
+  max-height: 180px; /* Allows the height to grow dynamically */
+  opacity: 1;
+}
+.list-description {
+  font-weight: normal;
+  padding: 0px 30px 15px;
+  font-weight: 500;
+  font-size: 18px;
 }
