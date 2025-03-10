@@ -4,6 +4,10 @@ import Category2 from '/src/assets/Category-2.png';
 import Category3 from '/src/assets/Category-3.png';
 import Category4 from '/src/assets/Category-4.png';
 import Category5 from '/src/assets/Category-5.png';
+import Customshirt1 from '/src/assets/customshirt1.png';
+import Customshirt2 from '/src/assets/customshirt1.png';
+import Customshirt3 from '/src/assets/customshirt1.png';
+import MainS2img1 from '/src/assets/mainsection2-img1.png';
 
 function Mainsection() {
   return (
@@ -32,7 +36,7 @@ function Mainsection() {
         <ul className="w-321 pb-29">
           {/* Step 1 */}
           <li className="flex mb-22 ">
-            <img src="src\assets\customshirt1.png" alt="" />
+            <img src={Customshirt1} alt="" />
             <div className="w-60  flex justify-center m-auto">
               <span className=" step-number font-bold flex items-center justify-center ">1</span>
             </div>
@@ -46,7 +50,7 @@ function Mainsection() {
           </li>
           {/* Step 2 */}
           <li className="flex flex-row-reverse  mb-22 ">
-            <img src="src\assets\customshirt2.png" alt="" />
+            <img src={Customshirt2} alt="" />
             <div className="w-60 flex justify-center m-auto">
               <span className=" step-number font-bold flex items-center justify-center ">2</span>
             </div>
@@ -60,7 +64,7 @@ function Mainsection() {
           </li>
           {/* Step 3 */}
           <li className="flex  ">
-            <img src="src\assets\customshirt3.png" alt="" />
+            <img src={Customshirt3} alt="" />
             <div className="w-60  flex justify-center m-auto">
               <span className=" step-number font-bold flex items-center justify-center ">3</span>
             </div>
@@ -78,7 +82,7 @@ function Mainsection() {
       {/* Main Section 2 */}
       <section className="mainSection2 flex-col ">
         <div className="flex pb-18">
-          <img className="pe-20 p-4" src="src\assets\mainsection2-img1.png" alt="" />
+          <img className="pe-20 p-4" src={MainS2img1} alt="" />
           <div className="flex flex-col  m-auto">
             <h1 className="font-bold text-[48px] w-150"> Free and easy way to bring your ideas to life</h1>
             <p className="w-150 text-[18px] mt-5 mb-2.5">
